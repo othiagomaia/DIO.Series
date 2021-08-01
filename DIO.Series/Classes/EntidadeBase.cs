@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DIO.Series.Classes
+namespace DIO.Series
 {
-    class EntidadeBase
+    public abstract class EntidadeBase
     {
+        public int Id { get; protected set; }
     }
 }
