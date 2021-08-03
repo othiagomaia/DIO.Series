@@ -35,13 +35,19 @@ namespace DIO.Series
             retorno += "Genero: " + Genero + Environment.NewLine;
             retorno += "Titulo: " + Titulo + Environment.NewLine;
             retorno += "Descricao: " + Descricao + Environment.NewLine;
-            retorno += "Ano de Inicio: " + Ano;
+            retorno += "Ano de Inicio: " + Ano + Environment.NewLine;
+            retorno += "Excluido: " + this.Excluido;
             return retorno;
         }
 
         public string RetornaTitulo()
         {
             return Titulo;
+        }
+
+        public string RetornaExcluido()
+        {
+            return Excluido ? "*Excluído*" : "";
         }
 
         public int RetornaId()
